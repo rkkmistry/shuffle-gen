@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(239, 239, 239);
+  line-height: 1.2em;
+  font-size: 1.2em;
+  color: rgb(46, 46, 46);
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#page-wrapper {
+  width: 650px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 30px 15px;
+  border-radius: 5px;
+  box-shadow: 3px 0px 5px #dddddd;
+}
+
+.weight {
+  margin-left: 10px;
+}
+
+.text {
+  background-color: green;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px 0;
+  display: block;
+  border: none;
+  background-color: rgb(68, 108, 179);
+  color: white;
+  font-size: 0.8em;
+}
+
+input[type="number"] {
+  width: 10%;
+}
+
+#display {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 0.6em;
+}
+
+p {
+  margin: 20px 0; 
+  font-size: 0.8em;
+}
+
+#file-area {
+  margin: 15px 0;
+}
+
+button {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  background-color: rgb(68, 108, 179);
+  color: white;
+  font-size: 0.9em;
+  box-shadow: 1px 2px 5px #999999;
+}
+

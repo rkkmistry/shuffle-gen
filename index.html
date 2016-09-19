@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/chance/chance.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <h1>Shuffle Stuff</h1>
+      <p id="header-text">The algorithim randomly selects lines from each file you load, but you can "weight" each text by adding numbers between 1-10 to make it draw more or less from certain files. Add as many files as you want but make sure that they have line breaks (\n) and are in plain text format (.txt). Have fun!</p>
+      <label>Lines of Output</label>
+      <input type='number' value=10 id="lines">
+      <div id="file-area">
+        <label>Files Added:</label>
+        <input id="browse" type="file" onchange="previewFiles()" multiple>
+        <div id="preview"></div>
+      </div>
+      <label>Output:</label>
+      <div id="display">Choose files and then click "Process"!</div>
+      <button onclick="processText()">Process!</button>
+	</div>
+	<script src="sketch.js"></script>
+  </body>
+</html>
