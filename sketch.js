@@ -3,6 +3,7 @@ var texts = [];
 function processText() {
   var weights = [];
   var final = ""
+  var sep = $("#sep").val();
   
   $("#display").html("");
   
@@ -13,7 +14,7 @@ function processText() {
   for(var i = 0; i < $("#lines").val(); i++) {
     test = chance.weighted(["a", "b"], [1, 1]);
     choice = chance.weighted(texts, weights);
-    final += (chance.pick(choice.split("\n")) + "<br>");
+    final += (chance.pick(choice.split(sep)) + "<br>");
   }
   
   $("#display").append(final);

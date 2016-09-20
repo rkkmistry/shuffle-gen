@@ -10,17 +10,19 @@
   <body>
     <div id="page-wrapper">
       <h1>Shuffle Stuff</h1>
-      <p id="header-text">The algorithim randomly selects lines from each file you load, but you can "weight" each text by adding numbers between 1-10 to make it draw more or less from certain files. Add as many files as you want but make sure that they have line breaks (\n) and are in plain text format (.txt). If you reload the page, everything will reset.</p>
+      <p id="header-text">The algorithm randomly selects pieces from each file you load and you can make it draw more or less from certain files by increasing the number (1-10) next to the file. Add as many files as you want but make sure they are in plain text format (.txt). The seperator character is what the program uses to divide up the text into pieces it can choose from. By default it is the new line/ return character (\n), but you can change it to something like a period if you're inputting paragraphs of text. If you reload the page, everything will reset.</p>
       <label>Lines of Output</label>
-      <input type='number' value=10 id="lines">
+      <input type='number' value=10 id="lines"><br>
+      <label>Seperator Character</label>
+      <input type='text' value='\n' id="sep">
       <div id="file-area">
         <label>Files Added:</label>
         <input id="browse" type="file" onchange="previewFiles()" multiple>
         <div id="preview"></div>
       </div>
+      <button onclick="processText()">Process!</button><br>
       <label>Output:</label>
       <div id="display">Choose files and then click "Process"!</div>
-      <button onclick="processText()">Process!</button>
 	</div>
 	<script src="sketch.js"></script>
   </body>
